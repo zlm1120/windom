@@ -1,0 +1,23 @@
+#mapContenter{width: 100%;height:400px;overflow: hidden;background: #CCCCCC;}
+
+.ContactBox {margin:17px 0 25px;overflow: hidden;}
+.ContactBox h1{width:358px;height:40px;background: url(../img/contact-title.png) no-repeat center;background-size: 100%;overflow: hidden;}
+.ContactBox .ContactMain{width:100%;overflow: hidden;margin-top: 30px;}
+.ContactMain .contactAddress{margin-left: 4%;}
+.ContactMain .contactAddress,.ContactMain .contactIdea{width: 45%;overflow: hidden;}
+.ContactMain .contactAddress div{margin-bottom: 30px;font-size: 14px;font-family: "microsoft yahei";color: #666666;overflow: hidden;}
+.ContactMain .contactAddress div.tel span{color: #333333;font-weight: bold;}
+.ContactMain .contactAddress div.erwei img{float: left;}
+.ContactMain .contactAddress div.erwei em{float: left;margin-top: 30px;margin-left: 10px;}
+
+.ContactMain .contactIdea dl{position: relative;margin-bottom: 10px;padding-left: 35%;}
+.ContactMain .contactIdea dt{width:35%;height:31px;position: absolute;left: 0;top: 0;text-align: right;font-size: 14px;}
+.ContactMain .contactIdea dd input{width: 70%;height: 31px;line-height:31px;border: 1px solid #999999;outline: none;padding: 0 5px;}
+.ContactMain .contactIdea dd textarea{width: 95%;height: 150px;line-height:31px;border: 1px solid #999999;outline: none;resize: none;overflow: auto;padding: 0 5px;}
+.ContactMain .contactIdea dd a{width: 89px;height: 33px;line-height:33px;display: block;text-align: center;background: url(../img/contact_btn_bg.png) no-repeat center;color: #FFFFFF;font-size: 16px;}
+
+/*@media only screen and (max-width: 1430px) {
+	.ContactMain .contactAddress,.ContactMain .contactIdea{width: 100%;clear: both;margin-bottom: 30px;}
+	.ContactMain .contactIdea dl{padding-left: 16%;}
+	.ContactMain .contactIdea dt{width:16%;}
+}*/

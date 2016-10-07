@@ -1,0 +1,200 @@
+/*品牌商注册*/
+
+
+.content-buttom{width: 80%;margin: auto;margin-top: 25px;padding-bottom: 50px;} 
+.content-top{width: 100%;margin: auto;height: 226px;border-bottom: 1px solid #d3d3d3;} 
+ 
+ .inputGroup{line-height: 50px;border-bottom: 1px solid #CCCCCC;overflow: hidden;margin-bottom: 10px;}
+ .inputGroup label{width: 120px;display: block;float: left;font-size: 16px;font-family: "microsoft yahei";color: #333333;text-align: right;margin-right: 20px;}
+.inputGroup input{width:38%;height:50px;*line-height: 50px;float: left;padding-left: 5px;font-size: 16px;font-family: "microsoft yahei";color: #999;outline: none;border: none;*border: none;background: none;}
+
+.inputGroup input.vilidate{width: 100px;float: right;border-left: 1px solid #CCCCCC;padding: 0;text-align: center;}
+.inputGroup input.getVidate{float: right;font-size: 12px;font-family: "宋体";color:#FFFFFF;background: #999999;  width: 100px;height: 30px;margin-top: 10px;margin-right: 10px;border-radius: 5px;}
+
+.nexts{width: 150px;height: 40px;font-size: 18px;color: #FFFFFF;background: #d20c1c;border: 0;margin-top: 15px;margin-left: 292px;}
+.last{width: 150px;height: 40px;font-size: 18px;color: #FFFFFF;background:#999999;border: 0;margin-left: 152px;margin-top: 15px;}
+
+
+.affirm{width: 150px;height: 40px;font-size: 18px;color: #FFFFFF;background:#d20c1c;border: 0;margin-left: 292px;margin-top: 35px;}
+.brand_next{width: 150px;height: 40px;font-size: 18px;color: #FFFFFF;background: #d20c1c;border: 0;margin-top: 15px;margin-left: 50px;}
+.content-top .brand_two{margin-top: 10px;}
+p.idCharImg{margin-left: 120px;font-size: 16px;font-family: "microsoft yahei";color: #999;}
+.inputGroup button{float: right;border: none;margin-top: 12px;cursor: pointer;outline: none;background: none;}
+.inputGroup .file-input{width:80px !important;height:24px !important;float: right;border: none;margin-top: 13px;cursor: pointer;outline: none;background: none;position: relative;right: -80px;*right: -96px;visibility: none;opacity: 0;}
+#fileimage-box,#swBox,#zzBox,#wineBox,#ltBox,#yyBox,#oneEmailPersonCard,#sfCard{width: auto;height: auto;margin-top: 50px;margin-left: 60px;}
+
+/*#fileimage-box a{width: 80px;height: 80px;overflow: hidden;
+  border: 1px solid rgb(235, 235, 235);margin-left: 15px;}*/
+  
+#fileimage-box img,#swBox img,#zzBox img,#wineBox img,#ltBox img,#yyBox img,#oneEmailPersonCard img,#sfCard img{width: 80px;height: 80px;margin-left: 10px;}
+#fileimage-box i,#swBox i,#zzBox i,#wineBox i,#ltBox i,#yyBox i,#oneEmailPersonCard i,#sfCard i{  position: relative;top: -65px;left: -13px;font-size: 16px;cursor: pointer;}
+#fileimage-box i:hover,#swBox i:hover,#zzBox i:hover,#wineBox i:hover,#ltBox i:hover,#yyBox i:hover,#oneEmailPersonCard i:hover,#sfCard i:hover{color: #D20C1C;}
+/*申请成功*/
+.succ{width: 80%;margin: auto;}
+.succ h1{font-size: 27px;font-weight: 400px;font-family: "宋体";line-height: 40px;height: 40px;width: 60%;margin: auto;}
+.succ p{font-size: 15px;font-family: "宋体";height: 40px;line-height: 40px;width: 45%;margin: auto;}
+.succ a{font-size: 15px;font-family: "宋体";color: #1e9ecf;}
+.succ .account{font-size: 20px;width: 45%;height: 50px;}
+.succ .account a{font-size: 18px;color: #696969;text-decoration: underline;}
+
+.user_isAgree{height: 60px;font-size: 16px;line-height: 40px;  position: relative;left: 50%;margin-left: -200px;}
+
+.inputGroup .alert_lable{width: 250px;font-size: 14px;color: #17a9eb;}
+
+/*城市服务商注册*/
+.wineTypes{width: 100%;border-bottom: 1px solid #CCCCCC;height: 40px;}
+.wineTypes div{width: 100px;float: left;text-align: center;background: #FFFFFF;height: 30px;line-height: 30px;margin-left: 10px;border-radius: 5px;font-size: 18px;}
+.wineTypes div:hover{background: #CCCCCC;}
+.wineTypes div.checkIn{background: #D20C1C;color: #FFFFFF;}
+.wineType{width: 16%;float: left;margin-top: -20px;}
+/*border-left: 1px solid #CCCCCC;*/
+.cityMainWine{width: 85%;float: left;min-height: 200px;}
+.wineType div{  width: 100px; height: 35px;line-height: 40px;font-size: 20px; font-family: "microsoft yahei"; text-align: center; background: #ccc;margin-top: 20px;}
+.wineType .checkIn{background: url(../img/chooseIn.png);color: #FFFFFF;width: 115px;}
+.wineType .checkIn:hover{background: url(../img/chooseIn.png);color: #FFFFFF;width: 115px;}
+.wineType div:hover{background: #D20C1C;color: #FFFFFF;}
+
+.cityMainWine .chooseWine{line-height: 50px;border-bottom: 1px  dashed #CCCCCC;overflow: hidden;margin-bottom: 10px;  margin-left: 30px;}
+.cityMainWine  label{display: block;float: left;font-size: 18px;font-family: "microsoft yahei";color: #333333;}
+.cityMainWine input{ float: right;  width: 20px;height: 18px;margin-top: 25px;}
+
+.price{width: 100%;height: 40px;line-height:40px;background: #ccc;clear: both;}
+.price p{font-size: 18px;text-align: center;}
+.price span{color: #D20C1C;}
+.operation{width: 100%;clear: both;}
+
+
+
+/*1公里服务商注册*/
+.combo{border-bottom: 1px solid #CCCCCC;height: 40px;margin-bottom: 10px;}
+.combo div.info{float: left;color:#999999;cursor: pointer;}
+.combo div.combos{  /*position: relative;left: 50px;*/ float:left}
+.combo div.combos a{font: "微软雅黑";font-size: 20px;display: block;width: auto;
+float: left;margin-left: 10px;text-align: center;color: #535353;border-radius: 5px;padding: 2px;}
+.combo div.combos a:hover{background: #333333;color: #FFFFFF;}
+.combo div.combos a.check{background: #333333;color: #FFFFFF;min-width: 80px;}
+.combo div.wineTypeInfo{  /*position: relative;left: 50px;*/ float:right}
+.info_information{width: 800px;background: #e5e5e5;position: absolute; z-index: 2;left: 5%;opacity: 1;min-height: 400px;display: none;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);text-shadow: 0 -1px 1px rgba(0,0,0,0.25);border-bottom: 1px solid rgba(0,0,0,0.25); margin-top: -20px;}
+.combo div.info img{width: 12px;height: 16px;position: relative;top: 4px;margin-left: 6px;}
+.inputGroup a.oneRadio,.inputGroup a.oneCardRadio,.combo a.oneRadio{font-size: 16px;font-family: "microsoft yahei";color: #999;background: url(../img/ServerBlur.png) no-repeat left center;padding-left: 25px;margin-right: 15px;}
+
+.info_information .content{width: 80%; min-height: 300px;margin: 50px 0px 0px 10%;background: #FFFFFF;border-radius: 5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);text-shadow: 0 -1px 1px rgba(0,0,0,0.25);border-bottom: 1px solid rgba(0,0,0,0.25);}
+
+
+.cityMainWines{margin-top: 20px;}
+.cityMainWines .list{width: 23%;float: left;margin: 0 1% 20px 1%;background: #FFFFFF;padding: 1.5%;box-shadow: 1px 1px 5px #CCCCCC;position: relative;} 
+.cityMainWines .list.isVerify{*padding-bottom: 0;}
+.cityMainWines .list span{width: 38px;height: 38px;display: block;background: url(../img/select.png) no-repeat center;position: absolute;left: 0;top: 0;visibility: hidden;}
+/*.cityMainWine .list.isNotVerify span{visibility: hidden;}*/
+.cityMainWines .list.isVerify span{visibility: visible;}
+/*.cityMainWine .list.failure span{visibility: hidden;}*/
+.cityMainWines .list.isVerify .editBtn{display: none;}
+.cityMainWines .list.failure .editBtn{display: none;}
+
+.cityMainWines .list .PicBox{width: 100%;height: 220px;line-height: 220px;text-align: center;}
+.cityMainWines .list .PicBox img{width: 95%;vertical-align: middle;}
+.cityMainWines .list h1{font-size: 12px;font-family: "宋体";color: #666666;}
+
+.cityMainWines .list .editBtn{margin-top: 20px;}
+.cityMainWines .list .editBtn a.link{display: block;line-height: 34px;text-align: center;background: #e6e6e6;color: #333333;font-size: 16px;font-family: "宋体";width: 100%;}
+.cityMainWines .list .editBtn a.giveBtn{display: block;line-height: 34px;text-align: center;background: #999999;color: #FFFFFF;font-size: 16px;font-family: "宋体";;width: 100%;}
+
+.cityMainWines .list .editBtn a.selectBtn{background: #D20C1C;color: #FFFFFF;width: 100%;}
+.cityMainWines .list.isNotVerify .editBtn a.giveBtn{display: none}
+
+.cityMainWines .list .isShenHe a.inCheck{display: block;line-height: 34px;text-align: center;background: #d84c29;color: white;font-size: 16px;font-family: "宋体";width: 100%;}
+.cityMainWines .list .isShenHe a.delCheck{display: block;line-height: 34px;text-align: center;background:#999999;color: white;font-size: 16px;font-family: "宋体";width: 100%;}
+
+
+
+.cityMainWines .list .isShenHe{margin-top: 20px;}
+.cityMainWines .list .isShenHe a{width:48%;display: block;line-height: 34px;text-align: center;background: #e6e6e6;color: #333333;font-size: 16px;font-family: "宋体";}
+.cityMainWines .list .isShenHe a.verify{float: left;background: #D20C1C;color: #FFFFFF;}
+.cityMainWines .list .isShenHe a.giveBtn{float: right;}
+
+.cityMainWines .list .isShenHe a.verifyfile{float: left;background: #999999;color: #FFFFFF;}/*#999999*/
+.cityMainWines .list .isShenHe a.shenHeAgain{float: right;background: #D20C1C;color: #FFFFFF;}/*#999999*/
+
+.oneMainWine{margin-top: 20px;}
+.wrapper .wrap{*margin-bottom: 20px;}
+.oneMainWine .list{*width:14.922%;float: left;margin: 0 1% 20px 1%;background: #FFFFFF;padding: 1.5%;box-shadow: 1px 1px 5px #CCCCCC;position: relative;*border: 1px solid #CCCCCC;} 
+.oneMainWine .list.isVerify{*padding-bottom: 0 !important;}
+.oneMainWine .list span{width: 38px;height: 38px;background: url(../img/select.png) no-repeat center;position: absolute;left: 0;top: 0;}
+.oneMainWine .list .PicBox{width: 100%;height: 220px;line-height: 220px;text-align: center;}
+.oneMainWine .list .PicBox img{width: 95%;vertical-align: middle;}
+.oneMainWine .list h1{font-size: 12px;font-family: "宋体";color: #666666;}
+.oneMainWine .list p{font-size: 12px;font-family: "宋体";color: #999999;line-height: 24px;}
+.oneMainWine .list p strong{font-size: 14px;color: #333333;}
+.oneMainWine .list .num,.processBox .list .num{overflow: hidden;display: inline-block;margin: 5px 0;}
+.oneMainWine .list .num button,.processBox .list .num button{height:21px;background: #CCCCCC;padding: 0 5px;color: #FFFFFF;font-family: "microsoft yahei";font-size: 12px;cursor: pointer;outline: none;border: 1px solid #cccccc;}
+.oneMainWine .list .num input,.processBox .list .num input{width:37px;height:19px;background: none;text-align: center;font-size: 12px;font-family: "宋体";color: #666666;outline: none;line-height: 19px;border: 1px solid #cccccc;}
+.oneMainWine .list .num .miuns,.processBox .list .num .miuns{float: left;border-right: none;}
+.oneMainWine .list .num .count,.processBox .list .num .count{float: left;}
+.oneMainWine .list .num .plus,.processBox .list .num .plus{float: left;border-left: none;*margin-left: -1px;}
+
+.oneMainWine .list .editBtn,.oneMainWine .list .isShenHe{overflow: hidden;}
+.oneMainWine .list .editBtn a.link{display: block;line-height: 34px;text-align: center;background: #e6e6e6;color: #333333;font-size: 16px;font-family: "宋体";width: 100%;}
+.oneMainWine .list .editBtn a.giveBtn,.oneMainWine .list .editBtn a.giveBtns{display: block;line-height: 34px;text-align: center;background: #999999;color: #FFFFFF;font-size: 16px;font-family: "宋体";width: 100%;}
+.oneMainWine .list .editBtn a.selectBtn{background: #D20C1C;color: #FFFFFF;width: 100%;}
+.oneMainWine .list.isSelect .editBtn a.giveBtn{display: none;}
+.oneMainWine .list.isSelect span{visibility: hidden;}
+
+.oneMainWine .list .editBtn a.giveBtns{cursor: default;}
+
+.oneMainWine .list.giveAgent .isShenHe a{width:48%;display: block;line-height: 34px;text-align: center;background: #e6e6e6;color: #333333;font-size: 16px;font-family: "宋体";}
+.oneMainWine .list.giveAgent .isShenHe a.verify{float: left;background: #D20C1C;color: #FFFFFF;}/*#999999*/
+.oneMainWine .list.giveAgent .isShenHe a.giveBtn{float: right;}
+.oneMainWine .list.giveAgent .editBtn a.tsLabel{display: block;line-height: 34px;text-align: center;background: #999999;color: #FFFFFF;font-size: 16px;font-family: "宋体";width: 100%;}
+.oneMainWine .list.giveAgent .editBtn{display: none;}
+.oneMainWine .list.giveAgent span{visibility: visible;}
+
+.oneMainWine .list.applyAgain .isShenHe a{width:48%;display: block;line-height: 34px;text-align: center;background: #e6e6e6;color: #333333;font-size: 16px;font-family: "宋体";}
+.oneMainWine .list.applyAgain .isShenHe a.failBtn{float: left;background: #e6e6e6;}/*#999999*/
+.oneMainWine .list.applyAgain .isShenHe a.againBtn{float: right;background: #D20C1C;color: #FFFFFF;}
+.oneMainWine .list.applyAgain .editBtn{display: none;}
+.oneMainWine .list.applyAgain span{visibility: hidden;}
+
+.oneMainWine .list.isVerify .editBtn a.giveBtn{background: #d94c28;}
+.oneMainWine .list.isVerify span{visibility: visible;}
+
+
+
+
+.oneService{height: 50px;width: 100%;background: #FFFFFF;margin-top: 10px;}
+.oneService div{width: 100px;float: left;text-align: center;background: #FFFFFF;height: 30px;line-height: 30px;border-radius: 5px;font-size: 18px;  margin-top: 10px;margin-left: 10px;}
+.oneService div:hover{background: #CCCCCC;}
+.oneService div.checkIn{background: #D20C1C;color: #FFFFFF;}
+.wrap{width: 60% !important;}
+
+
+.gridRule{width: 95%; margin: auto;height: 40px;line-height: 40px;font-size: 15px;color: #666666;font-family: "microsoft yahei";}
+
+
+#agreeContent{width: 110%;min-height: 300px;position: absolute;top: 180px;left: -5%;border: 4px solid #D4D4D4;background:#FFFFFF;}
+.main_title{height: 50px;font-size: 20px;background: #e5e5e5;line-height: 50px;border-bottom: 1px solid #939393;}
+.main_title p{margin-left: 10px;color: #333333;}
+.close:hover{ cursor:pointer;}
+.close{position: relative;top: -35px;left: 98%;color: #939393;}
+.mainAgree{max-height: 70%;border-bottom: 2px solid #D4D4D4;overflow-y:auto;padding-bottom: 30px;}
+.agreeButton{width: 180px;height: 40px;background: #D20C1C;border: none;color: #FFFFFF;  position: relative;left: 50%;margin-left: -90px; margin-top: 20px;}
+.agreeButton:hover{ cursor:pointer;}
+
+
+
+
+
+
+a {
+  text-decoration: none;
+  color: #1b66c7;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+

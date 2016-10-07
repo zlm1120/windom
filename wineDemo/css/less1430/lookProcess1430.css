@@ -1,0 +1,5 @@
+#adBnner a.pic img{width: 100%;min-width: 1200px;}
+#adBnner .mainHead{width: 100%;min-width: 1200px;}
+#adBnner .mainHead .head{margin: 0 auto 21px;}
+
+.processBox .list{width:20%;float: left;margin: 0 1% 20px 1%;background: #FFFFFF;padding: 1.5%;box-shadow: 1px 1px 5px #CCCCCC;position: relative;}

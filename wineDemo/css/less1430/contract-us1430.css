@@ -1,0 +1,7 @@
+.ContactBox h1{width:269px;height:30px;background: url(../../img/contact-title269.png) no-repeat center;}
+.ContactBox .ContactMain{margin-top: 15px;}
+.ContactMain .contactAddress,.ContactMain .contactIdea{width: 100%;clear: both}
+.ContactMain .contactIdea dl{padding-left: 16%;}
+.ContactMain .contactIdea dt{width:16%;}
+.ContactMain .contactAddress div.tel,.ContactMain .contactAddress div.erwei{width:300px;margin-left: 12%;}
+

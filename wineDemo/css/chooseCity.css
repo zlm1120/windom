@@ -1,0 +1,35 @@
+#adBnner{width: 100%;/*height:400px;*/position: relative;overflow: hidden;}
+#adBnner a.pic img{width: 100%;/*height: 400px;position: absolute;left: 50%;margin-left: -850px;*/}
+#adBnner .mainHead{width: 100%;height:174px;text-align: center;position: absolute;left: 0;top: 50%;margin-top: -55px;}
+#adBnner .mainHead .head{width: 100px;height: 100px;border-radius: 50px;-webkit-border-radius: 50px;-moz-border-radius: 50px;overflow: hidden;margin: 0 auto 42px;}
+#adBnner .mainHead .head img{width: 90px;height: 90px;border-radius: 45px;-webkit-border-radius: 45px;-moz-border-radius: 45px;border:5px solid rgba(225,225,225,0.6);overflow: hidden;}
+#adBnner .mainHead .typeLogo a{color: #FFFFFF;height: 32px;line-height:32px;display:inline-block;text-align: center;font-size: 16px;margin: 0 5px;}
+#adBnner .mainHead a.type{width: 123px;background: url(../img/personType.png) no-repeat center;}
+#adBnner .mainHead a.isShenHe{width: 114px;background: url(../img/personRhink.png) no-repeat center;}
+#adBnner .mainHead a.isShenHe img{vertical-align: middle;}
+
+
+
+
+.lookProcess{background: #FFFFFF;}
+.lookProcess .page1{width: 75%;margin: 0 auto;height: auto;border:#ccc 1px solid;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#999,direction=100,strength=2);/*ie*/
+-moz-box-shadow: 1px 1px 2px #999;/*firefox*/
+-webkit-box-shadow: 1px 1px 2px #999;/*safari或chrome*/
+box-shadow:1px 1px 2px #999;/*opera或ie9*/ margin-top: 20px;margin-bottom: 100px;}
+.lookProcess .page1 table{width: 96%;border: 1px solid #f0f0f0;height: 100px;  margin: 10px auto;margin-bottom: 60px;}
+.lookProcess .page1 table thead{width: 100%;height: 30px;background: #f0f0f0;}
+.lookProcess .page1 table thead tr{height: 100%;}
+
+.lookProcess .page1 table thead td.td-defalue{text-align: center;height: 42px;line-height: 40px;border-right: 1px solid #dedede;color: #a9a9a9;}
+.lookProcess .page1 table thead td.td-height{width: 25%;text-align: center;height: 42px;line-height: 40px;border-right: 1px solid #dedede;color: #a9a9a9;}
+.lookProcess .page1 table tbody td.td-defalue{text-align: center;height: 62px;line-height: 60px;border: 1px solid #dedede;color: #7b7b7b;}
+.lookProcess .page1 table tbody td.td-height{text-align: center;width: 30%;height: 62px;line-height: 60px;border: 1px solid #dedede;color: #7b7b7b;}
+.lookProcess .page1 table tbody td select{width: 200px;height: 30px;z-index: 999;}
+.sod_select { font-size: 12px;}
+
+.lookProcess .page1 table tbody td.td-height-one{width: 30%;height: 62px;line-height: 60px;border: 1px solid #dedede;color: #7b7b7b;}
+.lookProcess .page1 img{margin-top: 20px;margin-left: 30px;}
+.lookProcess .page1 span{  position: relative;top: -20px;left: 20px;}
+
+.lookProcess .page1 .save{width: 150px;height: 35px;background: #d20c1c;color: white;border: 0px;font-size: 18px;position: relative;top: -20px;border-radius: 5px; left: 25px;}

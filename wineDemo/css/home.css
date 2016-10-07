@@ -1,0 +1,33 @@
+
+#banner{text-align: center;position: relative;overflow: hidden; width: 100%;height: 600px;}
+#banner ul {overflow: hidden;height: 600px;}
+#banner ul li{float: left;width: 100%;height: 600px;}
+#banner .dots {position: absolute;bottom: 20px;left: 50%;}
+#banner .dots li{ display: block; width: 16px; height: 16px;margin: 2px 4px 0; text-indent: -999em; background:url(../img/blur.png) no-repeat center;background-size: 100%;cursor: pointer;float: left; }
+#banner .dots li.active {width: 20px; height: 20px; margin: 0 4px;background:url(../img/focus.png) no-repeat center;cursor: pointer;}
+
+
+.activeList {margin: 17px 0 20px;overflow: hidden;}
+.activeList li{width:25%;width:24.999999%;/**min-width:268px;*margin: 5px 0;*/float: left;position: relative;overflow: hidden;}
+.activeList li img{width: 100%;display: block;}
+.activeList .activeBox{width: 60%;height:100%;position: absolute;left: 0;top: 0;padding: 10px 0 0;}
+.activeList .activeBox1{background: url(../img/active_bg1.png) repeat;}
+.activeList .activeBox2{background: url(../img/active_bg2.png) repeat;}
+.activeList .activeBox3{background: url(../img/active_bg3.png) repeat;}
+.activeList .activeBox4{background: url(../img/active_bg4.png) repeat;}
+.activeList .activeBox p{font-size: 18px;font-family: "microsoft yahei";line-height: 30px; color: #FFFFFF;margin-left: 10px;}
+.activeList .activeBox3 p{color: #d20c1c;}
+.activeList .activeBox a{display:block;height:31px;line-height:31px;font-size: 16px;font-family: "microsoft yahei";color: #FFFFFF;position: absolute; bottom: 20px;left: 10px;text-align: center;}
+.activeList .activeBox1 a{width:115px;background: url(../img/active_btn_bg1.png) no-repeat left center;background-size: 100%;}
+.activeList .activeBox2 a{width:132px;background: url(../img/active_btn_bg2.png) no-repeat  left center;background-size: 100%;}
+.activeList .activeBox3 a{width:148px;background: url(../img/active_btn_bg3.png) no-repeat  left center;background-size: 100%;}
+.activeList .activeBox4 a{width:148px;background: url(../img/active_btn_bg4.png) no-repeat  left center;background-size: 100%;}
+
+
+.sliderimg {height: 600px;}
+.sliderimg img{height: 595px;}
+
+/*@media only screen and (max-width: 1430px) {
+	.activeList li{width: 50%;margin: 5px 0;}
+	.activeList .activeBox{width: 50%;}
+}*/

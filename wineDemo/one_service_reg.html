@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>递九 - 1公里服务商注册</title>
+		<meta name="keywords" content=" " />
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<link href="css/common.css" type="text/css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/brand_reg.css"/>
+		<link rel="stylesheet" href="alert/showBo.css" />
+		<script type="text/javascript" src="alert/showBo.js" ></script>
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+	</head>
+	<body>
+		<!--头部开始 Start-->
+		<div id="head">
+			<div class="headBox">
+				<div class="logo fl"></div> 
+				<div class="login fr">
+					<div class="loginBefore">
+						<a href="javascript:void(0)" class="title">登录</a>
+						<div class="login-box">
+							<span></span>
+							<p><input type="text" class="loginInput" name="uname" id="uname" placeholder="账号"/></p>
+							<p>
+								<!--<input type="text" class="loginInput" name="pwd" id="pwd"  />-->
+								<input type="password" class="loginInput" name="upwd" id="upwd" placeholder="密码"/>
+							</p>
+							<p><label><input type="checkbox" class="checkbox" id="ischeck" data-on="0" />记住我</label>
+								<label class="updatePwd" onclick="location.href='update_pwd.html'">忘记密码?</label>
+							</p>
+							<a href="javascript:void(0)" class="loginBtn">登录</a>
+						</div>
+					</div>
+					<div class="loginAfter">
+						
+					</div>
+				</div>
+				<div class="menu fr">
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li class="drop-menu active">
+							<a href="javascript:void(0)">服务中心</a>
+							<div>
+								<a href="brandReg.html">品牌服务商</a>
+								<a href="city_service_reg.html">城市服务商</a>
+								<a href="one_service_reg.html">一公里服务商</a>
+								<!--<a href="bus-register.html">业务员</a>-->
+							</div>
+						</li>
+						<li><a href="about.html">关于递九</a></li> 
+						<li><a href="join-us.html">加入我们</a></li>
+						<li><a href="contact-us.html">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--//头部开始 End-->
+		<!-- 广告条 Start    -->
+		<div id="adBnner">
+			<a href="javascript:void(0)"><img src="img/one_service_one.png" /> </a>
+		</div>
+		<!-- // 广告条 End   -->
+		<!-- 中间内容 -->
+	   <div class="cityContent">
+		   	<div class="content-top">
+		   		<img src="img/city_service_one.png"brand_two"/>
+		   	</div>
+		   	<div class="content-buttom">
+		   		<!--<div class="inputGroup">
+					<label>注册身份</label>
+					<a href="javascript:void(0)" class="oneCardRadio" data-check="1">个人</a>
+					<a href="javascript:void(0)" class="oneCardRadio" data-check="0">公司</a>
+				</div>-->
+				<div class="inputGroup">
+					<label>手机号</label>
+					<input type="text" class="one-input" id="oneUname" onchange="checkBrand()"  placeholder="请输入手机号码"/>
+					
+					<!--<input type="text" class="one-input" id="oneUEmail" placeholder="请输入邮箱账号" onchange="checkEmail()" style="display: none;"/>-->
+					
+					<input type="text" class="vilidate" id="oneVilidate" placeholder="输入验证码" />
+					<input class="getVidate"" type="button" onclick="sendMessage()" value="获取验证码" />
+					<!--<a href="javascript:void(0)" class="getVidate" data-check="0"  onclick="getVidateCode();">获取验证码</a>-->
+				</div>
+				<div class="inputGroup">
+					<label>联系人</label>
+					<input type="text" class="one-input" id="name" onchange="checkName()" placeholder="请输入联系人名称"/>
+				</div>
+				<div class="inputGroup">
+					<label>服务地址</label>
+					<input type="text" class="one-input" id="oneAddress" onchange="checkAddress()" placeholder="请输入服务地址" />
+				</div>
+				<div class="inputGroup">
+					<label>输入密码</label>
+					<input type="password" class="one-input" id="onePwd" onchange="checkPwd()" placeholder="请输入密码" />
+				</div>
+				<div class="inputGroup">
+					<label>确认密码</label>
+					<input type="password" class="one-input" id="onePwdAgain" onchange="checkAgainPwd()" placeholder="请确认密码" />
+				</div>
+				
+				<!--<div class="inputGroup">
+					<label>服务商名称</label>
+					<input type="text" class="one-input" id="accountName" onchange="checkOneName()" placeholder="请输入1公里服务商名称"/>
+				</div>-->
+				<!--<div class="inputGroup" id="email">
+					<label>邮箱</label>
+					<input type="text" class="one-input" id="oneEmail" onchange="checkEmail()" placeholder="请输入邮箱"/>
+				</div>
+				
+				<div class="inputGroup" id="person">
+					<label>服务类型</label>
+					<a href="javascript:void(0)" class="oneRadio" data-check="1">固定</a>
+					<a href="javascript:void(0)" class="oneRadio" data-check="0">移动</a>
+				</div>
+				
+				<div class="inputGroup" id="comp" style="display: none;">
+					<label>服务类型</label>
+					<a href="javascript:void(0)" class="oneRadio" data-check="1" style="background: url(img/ServerBlur.png) no-repeat left center;">固定</a>
+				</div>-->
+				
+					<form id="form1">
+						<div class="inputGroup">
+							<label id="label1">身份证号</label>
+							<input type="text" class="one-input" id="oneIdCard" onchange="checkIdCard()" placeholder="请输入身份证号码" />
+							<button><img src="img/upload-btn.png" /></button>
+							<input type="file" name="imageFile" accept="image/*"  class="file-input" onchange="showPreview('form1','sfCard')"/>
+							<div id="sfCard">
+					
+							</div>
+						</div>
+					</form>
+					<form id="form2">
+						<div class="inputGroup">
+							<label id="label2">营业执照号</label>
+							<input type="text" class="one-input" id="oneBusCode" onchange="checkOneBusCode()" placeholder="请输入营业执照号" />
+							<button><img src="img/upload-btn.png" /></button>
+							<input type="file" name="imageFile" accept="image/*"  class="file-input" onchange="showPreview('form2','wineBox')"/>
+							<div id="wineBox">
+					
+							</div>
+						</div>
+					</form>
+				<!--<form id="form2">
+					<div class="inputGroup">
+						<label id="label2">营业执照</label>
+						<input type="text" class="one-input" id="businessNo"  placeholder="请输入营业执照号" />
+						<button><img src="img/upload-btn.png" /></button>
+						<input type="file" name="imageFile" accept="image/*"  class="file-input" onchange="addPreview(this,'oneEmailPersonCard')" />
+						<div id="oneEmailPersonCard">
+					
+						</div>
+					</div>
+					
+				</form>-->
+				
+				<!--<div class="inputGroup" id="organCodeInput">
+					<label>组织机构证代码</label>
+					<input type="text" class="one-input" id="organCode" onchange="checkOrganCode()" placeholder="请输入组织机构代码"/>
+				</div>-->
+				<div class="user_isAgree">
+					<input type="checkbox" id="agree" checked="checked">
+					<label>我已阅读并同意</label>
+					<a target="_blank" onclick="showAgree()">《1公里服务商注册协议》</a>	
+				</div>
+				<div id="agreeContent" style="display: none;">
+					<div>
+						<div class="main_title"><p>1公里服务商注册协议</p></div>
+						<div class="icon-remove close"></div>
+					</div>
+					<div class="mainAgree">
+						
+					</div>
+					<div>
+						<input class="agreeButton" type="button" value="同意并继续" />
+					</div>
+				</div>
+				<div>
+					<!--onclick="checkFields()"-->
+					<input type="button" class="nexts" value="下一步" id="oneServerBtn"/>
+				</div>
+		   	</div>
+	   </div>
+	   
+	    <!-- //主题内容  End-->
+		<div id="footer">
+			©版权所有:递九商贸股份有限公司 备案号:陇ICP备14001675号-1
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-1.9.1.js" ></script>
+		<script type="text/javascript" src="js/jquery.form.js" ></script>
+		<script type="text/javascript" src="js/comment.js" ></script>
+		<!-- 搜索引擎 Start-->
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.2"></script>
+		<script type="text/javascript" src="js/isLogin.js" ></script>
+		<script type="text/javascript" src="js/one-reg.js" ></script>
+		<script type="text/javascript" src="js/login.js" ></script>
+	</body>
+</html>

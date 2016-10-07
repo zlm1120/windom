@@ -1,0 +1,24 @@
+.update-content{width: 60%;margin: auto;height: 500px;border: 1px solid #CCCCCC;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#909090,direction=120,strength=4);/*ie*/
+-moz-box-shadow: 2px 2px 10px #909090;
+-webkit-box-shadow: 2px 2px 10px #909090;
+box-shadow:2px 2px 10px #909090;/*opera或ie9*/margin-top: 20px;margin-bottom: 230px;}
+
+.h1-font{font-family: "Microsoft YaHei";font-size: 24px;color: #666;padding: 20px;}
+.update_head{position: relative;width: 90%;left: 5%;}
+.content{position: relative;margin-top: 30px;height: 100%;width: 80%;}
+.content div{height: 80px;width:60%;margin-left:30%;}
+.content div label{display: block;font-family: "Microsoft YaHei";font-size: 14px;color: #666;text-align: right;width: 120px;float: left;line-height: 50px;}
+.content div input{width: 55%;height: 50px;background-color: #fff;border: 1px solid #999999;}
+.content div.vilidate_div input{width: 35%;}
+.content div.vilidate_div .button{border: none;width: 80px;background:#999999;margin-left: 5px;color: #FFFFFF;}
+.active_button{width: 119px;background: #D20C1C;color: #FFFFFF;height: 43px;margin-left: 50%;border: none;font-size: 20px;}
+.content div.suss_pwd{width: 220px;position: relative;left: 25%;margin-top: 100px;}
+.content div.suss_pwd img{margin-left: 70px;}
+.content div.suss_pwd h1{font-size: 24px;color: #989898;  margin-top: 10px;height: 50px;}
+.content div.suss_pwd h5{font-size: 14px;margin-left: -20PX;}
+.content div.suss_pwd h5 a{color: #D20C1C;}
+.content div.suss_pwd h5 a:hover{cursor: pointer;}
+
+.update_head img{width: 100%;}
+
