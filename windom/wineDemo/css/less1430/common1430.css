@@ -1,0 +1,4 @@
+#head{line-height: 62px;}
+.headBox .logo{width: 116px;height: 28px;margin: 17px 0;background: url(../../img/logo116.png) no-repeat center;background-size: 100%;}
+.headBox .login a.title{margin-top:18px;}
+#footer{line-height: 34px;*line-height:34px;}

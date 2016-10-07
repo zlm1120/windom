@@ -1,0 +1,29 @@
+.getMoney{background-color: #FFFFFF;width:75%;background:filter:progid:DXImageTransform.Microsoft.Shadow(color=#000000,direction=120,strength=4);margin: auto;z-index: 0;position: relative;
+-moz-box-shadow: 2px 2px 10px #909090;/*firefox*/
+-webkit-box-shadow: 2px 2px 10px #909090;/*safari或chrome*/
+box-shadow:2px 2px 10px #909090;/*opera或ie9*/}
+.content-buttom{width: 100%;margin: auto;margin-top: 25px;padding-bottom: 50px;} 
+.content-top{width: 100%;margin: auto;height: 250px;margin-top: 10px;border-left: 2px solid red;border-bottom: 1px solid #919191;} 
+
+
+.account_box{width: 100px;height: 40px;background: #D20C1C;font-size: 18px;text-align: center;line-height: 40px;color: #FFFFFF;}
+.content-top .bank_box{width: 50%;margin-left: 30px;margin-top: 30px;}
+.bank{width: 70%;height: 60px;}
+.bank img{float: left;width: 18px;height: 18px;}
+.bank p{float: left;margin-left: 30px;font-size: 15px;}
+.account_num{color: #D20C1C;font-weight: 700;}
+
+/*.content-top .content-top-mian{float: left;}*/
+.content-top .content-top-right{width: 45%;height: 200px;}
+.getMoneyInfo{height: 160px;background: #e6e6e6;position: relative;top: -90%;left: 120%;padding: 15px 15px;}
+
+/*.upload_button{width: 160px;height: 40px;font-size: 20px;background: #808080;color: #FFFFFF;border: none;border-radius: 5px;margin-left: 20px;}*/
+.photo_box{width: 300px;height: 200px;background: #e6e6e6;font-size: 25px;line-height:200px;color: #bfbfbf;margin: 20px 0px 0px 20px;text-align: center;}
+.photo_box img{width: 280px;height: 180px;padding: 10px 10px;}
+.get{width: 120px;height: 40px;font-size: 20px;background: #D20C1C;color: #FFFFFF;border: none;border-radius: 5px;margin-left: 20px;margin-top: 20px;}
+
+
+.upload_button{border: none;cursor: pointer;outline: none;background: none;width: 160px;height: 40px;font-size: 20px;background: #808080;color: #FFFFFF;border: none;border-radius: 5px;margin-left: 20px;}
+.file_input_box{  width: 160px !important;height: 40px !important;border: none;cursor: pointer; outline: none;background: none;position: relative;right: 163px;visibility: none;opacity: 0;}
+
+.notGet{width: 120px;height: 40px;font-size: 20px;background: #bfbfbf;color: #FFFFFF;border: none;border-radius: 5px;margin-left: 20px;margin-top: 20px;}

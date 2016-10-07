@@ -1,0 +1,13 @@
+#adBnner{width: 100%;/*height:400px;position: relative;*/overflow: hidden;}
+#adBnner img{width: 100%;height: 400px;/*position: absolute;left: 50%;margin-left: -850px;*/}
+
+
+.aboutBox {margin:17px 0 25px;overflow: hidden;}
+.aboutBox h1{width:358px;height:40px;background: url(../img/about_title.png) no-repeat center;background-size: 100%;}
+.aboutBox .aboutTxt{width: 70%;*width:100%;-webkit-column-count:2;-moz-column-count:2;-webkit-column-gap:40px;-moz-column-gap:40px;float: right;margin-top: 20px;}
+.aboutBox .aboutTxt P{font-size: 12px;font-family: "宋体";line-height: 25px; color: #666;margin-bottom: 20px;}
+
+/*@media only screen and (max-width: 1430px) {
+	.aboutBox .aboutTxt{width: 100%;clear: both;}
+	.aboutBox h1{width: 269px;height: 30px;background: url(../img/about_title269.png) no-repeat center;background-size: 100%;}
+}*/

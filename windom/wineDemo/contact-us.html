@@ -1,0 +1,212 @@
+<!Doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>递九 - 加入我们</title>
+<meta name="keywords" content=" " />
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<link href="css/common.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="css/contact-us.css" />
+
+
+<link rel="stylesheet" href="alert/showBo.css" />
+<script type="text/javascript" src="alert/showBo.js" ></script>
+
+
+<!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.3"></script>-->
+<script type="text/javascript" src="js/jquery-1.9.1.js" ></script>
+<script type="text/javascript" src="js/comment.js" ></script>
+</head>
+<body>
+<!--头部开始 Start-->
+<div id="head">
+	<div class="headBox">
+		<div class="logo fl"></div>
+		<div class="login fr">
+			<div class="loginBefore">
+				<a href="javascript:void(0)" class="title">登录</a>
+				<div class="login-box">
+					<span></span>
+					<p><input type="text" class="loginInput" name="uname" id="uname" placeholder="账号"/></p>
+					<p>
+						<!--<input type="text" class="loginInput" name="pwd" id="pwd"  />-->
+						<input type="password" class="loginInput" name="upwd" id="upwd" placeholder="密码"/>
+					</p>
+					<p><label><input type="checkbox" class="checkbox" id="ischeck" data-on="0" />记住我</label>
+						<label class="updatePwd" onclick="location.href='update_pwd.html'">忘记密码?</label>
+					</p>
+					<a href="javascript:void(0)" class="loginBtn">登录</a>
+				</div>
+			</div>
+			<div class="loginAfter">
+				
+			</div>
+		</div>
+		<div class="menu fr">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li class="drop-menu">
+					<a href="javascript:void(0)">服务中心</a>
+					<div>
+						<a href="brandReg.html">品牌服务商</a>
+						<a href="city_service_reg.html">城市服务商</a>
+						<a href="one_service_reg.html">一公里服务商</a>
+						<!--<a href="bus-register.html">业务员</a>-->
+					</div>
+				</li>
+				<li><a href="about.html">关于递九</a></li>
+				<li><a href="join-us.html">加入我们</a></li>
+				<li class="active"><a href="contact-us.html">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--//头部开始 End-->
+<!-- 地图 Start    -->
+<div id="mapContenter">
+	<input id="text_" type="text" />
+	<!--<input id="result_" type="text" />-->
+</div>
+<!-- // 地图 End   -->
+
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=d22393673ee82d53f10c09096fb46f49"></script>
+<script type="text/javascript">
+
+ 
+	var map = new AMap.Map("mapContenter", {
+		resizeEnable: true
+	});
+	var marker = new Array();
+	var windowsArr = new Array();
+
+	//基本地图加载
+	function placeSearch(address){
+		var MSearch;
+		AMap.service(["AMap.PlaceSearch"], function() {
+			MSearch = new AMap.PlaceSearch({ //构造地点查询类
+				pageSize:10,
+				pageIndex:1,
+				city:"021" //城市
+			});
+			//关键字查询
+			MSearch.search(address, function(status, result){
+				if(status === 'complete' && result.info === 'OK'){
+					keywordSearch_CallBack(result);
+				}
+			});
+		});
+	}
+//	placeSearch();
+
+	//添加marker&infowindow
+	function addmarker(i, d) {
+		var lngX = d.location.getLng();
+		var latY = d.location.getLat();
+		var markerOption = {
+			map:map,
+			icon:"img/pin-2.png",
+			position:new AMap.LngLat(lngX, latY),
+			topWhenMouseOver:true
+
+		};
+		var mar = new AMap.Marker(markerOption);
+		marker.push(new AMap.LngLat(lngX, latY));
+
+		var infoWindow = new AMap.InfoWindow({
+			content:"<h3><font color=\"#00a6ac\">  " + (i + 1) + ". " + d.name + "</font></h3>" + TipContents(d.type, d.address, d.tel),
+			size:new AMap.Size(300, 0),
+			autoMove:true,
+			offset:new AMap.Pixel(0,-20)
+		});
+		windowsArr.push(infoWindow);
+		var aa = function (e) {infoWindow.open(map, mar.getPosition());};
+		AMap.event.addListener(mar, "mouseover", aa);
+	}
+	//回调函数
+	function keywordSearch_CallBack(data) {
+		var resultStr = "";
+		var poiArr = data.poiList.pois;
+		var resultCount = poiArr.length;
+		for (var i = 0; i < resultCount; i++) {
+			// 要注销
+			if (i>0) {
+				break;
+			}
+			resultStr += "<div id='divid" + (i + 1) + "' onmouseover='openMarkerTipById1(" + i + ",this)' onmouseout='onmouseout_MarkerStyle(" + (i + 1) + ",this)' style=\"font-size: 12px;cursor:pointer;padding:0px 0 4px 2px; border-bottom:1px solid #C1FFC1;\"><table><tr><td><img src=\"http://webapi.amap.com/images/" + (i + 1) + ".png\"></td>" + "<td><h3><font color=\"#00a6ac\">名称: " + poiArr[i].name + "</font></h3>";
+			resultStr += TipContents(poiArr[i].type, poiArr[i].address, poiArr[i].tel) + "</td></tr></table></div>";
+			addmarker(i, poiArr[i]);
+		}
+		map.setFitView();
+	}
+	function TipContents(type, address, tel) {  //窗体内容
+		if (type == "" || type == "undefined" || type == null || type == " undefined" || typeof type == "undefined") {
+			type = "暂无";
+		}
+		if (address == "" || address == "undefined" || address == null || address == " undefined" || typeof address == "undefined") {
+			address = "暂无";
+		}
+		if (tel == "" || tel == "undefined" || tel == null || tel == " undefined" || typeof address == "tel") {
+			tel = "暂无";
+		}
+		var str = "  地址：" + address + "<br />  电话：" + tel + " <br />  类型：" + type;
+		return str;
+	}
+	function openMarkerTipById1(pointid, thiss) {  //根据id 打开搜索结果点tip
+		thiss.style.background = '#CAE1FF';
+		windowsArr[pointid].open(map, marker[pointid]);
+	}
+	function onmouseout_MarkerStyle(pointid, thiss) { //鼠标移开后点样式恢复
+		thiss.style.background = "";
+	}
+</script>
+<!--主题内容  Start-->
+<div id="wrapper">
+	<div class="wrap">
+		<div class="ContactBox">
+			<h1></h1>
+			<div class="ContactMain">
+				<div class="contactAddress fl">
+					<div>如果您需要我们的帮助，请第一时间联系我们，我们会第一时间给您反馈，为您解决所有问题。 商业合作也可联系我们。</div>
+					<div class="tel">
+						<p id="address"></p>
+						<p id="tel"></p>
+						<p id="webSite"></p>
+					</div>
+					<div class="erwei">
+						
+					</div>
+				</div>
+				<div class="contactIdea fr">
+					<dl>
+						<dt>姓名：</dt>
+						<dd><input type="text" id="name" class="contactInput" /></dd>
+					</dl>
+					<dl>
+						<dt>电话：</dt>
+						<dd><input type="text" id="moblie" class="contactInput" /></dd>
+					</dl>
+					<dl>
+						<dt>给我们的建议：</dt>
+						<dd><textarea id="idea" class="contactInput"></textarea></dd>
+					</dl>
+					<dl>
+						<dt></dt>
+						<dd><a href="javascript:void(0)" class="contactBtn">确认发送</a></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //主题内容  End-->
+<div id="footer">
+	©版权所有:递九商贸股份有限公司 备案号:陇ICP备14001675号-1
+</div>
+
+<script type="text/javascript" src="js/isLogin.js" ></script>
+<script type="text/javascript" src="js/contact.js" ></script>
+<script type="text/javascript" src="js/login.js" ></script>
+
+</body>
+</html>

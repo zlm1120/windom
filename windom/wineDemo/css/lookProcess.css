@@ -1,0 +1,99 @@
+#adBnner{width: 100%;/*height:400px;*/position: relative;overflow: hidden;}
+#adBnner a.pic img{width: 100%;/*height: 400px;position: absolute;left: 50%;margin-left: -850px;*/}
+#adBnner .mainHead{width: 100%;height:174px;text-align: center;position: absolute;left: 0;top: 50%;margin-top: -55px;}
+#adBnner .mainHead .head{width: 100px;height: 100px;border-radius: 50px;-webkit-border-radius: 50px;-moz-border-radius: 50px;overflow: hidden;margin: 0 auto 42px;}
+#adBnner .mainHead .head img{width: 90px;height: 90px;border-radius: 45px;-webkit-border-radius: 45px;-moz-border-radius: 45px;border:5px solid rgba(225,225,225,0.6);overflow: hidden;}
+#adBnner .mainHead .typeLogo a{color: #FFFFFF;height: 32px;line-height:32px;display:inline-block;text-align: center;font-size: 16px;margin: 0 5px;}
+#adBnner .mainHead a.type{width: 123px;background: url(../img/personType.png) no-repeat center;}
+#adBnner .mainHead a.isShenHe{width: 114px;background: url(../img/personRhink.png) no-repeat center;}
+#adBnner .mainHead a.isShenHe img{vertical-align: middle;}
+
+
+
+
+.lookProcess{background: #F0F0F0;overflow: hidden;}
+.lookProcess .EditBox{width: 100%;background: #FFFFFF;border-bottom: 1px solid #CCCCCC;overflow: hidden;}
+.lookProcess .EditBox h1{width:75%;min-width: 880px;/*max-width: 1200px;*/margin: 0 auto;float: left;}
+.lookProcess .EditBox h1 a{display:inline-block;color: #333333;font-family: "microsoft yahei";font-size: 24px;border-bottom: 3px solid #D20C1C;padding: 20px 0 10px;margin: 0 230px;}
+
+.lookProcess .personTitle,.lookProcess .personTitle1,.lookProcess .personTitle2,.lookProcess .personTitle3{width: 100%;background: #FFFFFF;border-bottom: 1px solid #CCCCCC;border-top: 1px solid #CCCCCC;overflow: hidden;margin-top: -1px;}
+.lookProcess .personTitle p,.lookProcess .personTitle1 p,.lookProcess .personTitle2 p,.lookProcess .personTitle3 p{width:75%;min-width: 880px;/*max-width: 1200px;*/margin: 0 auto;padding: 10px 0;}
+.lookProcess .personTitle p img,.lookProcess .personTitle1 p img,.lookProcess .personTitle2 p img,.lookProcess .personTitle3 p img{margin: 0 10px;}
+
+
+.processBox,.processBox1,.processBox2,.processBox3{width:60%;min-width: 880px;/*max-width: 1200px;*/margin: 20px auto 0;overflow: hidden;*margin-bottom: 20px;}
+.processBox .list,.processBox1 .list,.processBox2 .list,.processBox3 .list{  width: 23%;float: left;margin: 0 1% 20px 1%;background: #FFFFFF;padding: 1.5%;box-shadow: 1px 1px 5px #CCCCCC;position: relative;} 
+.processBox .list .PicBox,.processBox1 .list .PicBox,.processBox2 .list .PicBox,.processBox3 .list .PicBox{box-shadow: 1px 1px 5px #999;width: 100%;line-height: 220px;text-align: center;}
+.processBox .list .PicBox img,.processBox1 .list .PicBox img,.processBox2 .list .PicBox img,.processBox3 .list .PicBox img{width: 95%;vertical-align: middle;}
+.processBox .list h1,.processBox1 .list h1,.processBox2 .list h1,.processBox3 .list h1{font-size: 16px;font-family: "宋体";color: #666666;}
+.processBox .list h5,.processBox1 .list h5,.processBox2 .list h5,.processBox3 .list h5{font-size: 14px;font-family: "宋体";color: #666666;}
+.checkState{display: block;}
+.gary_div{background: #f0f0f0;margin-top: 5px;}
+.processBox .list p,.processBox1 .list p,.processBox2 .list p,.processBox3 .list p{font-size: 12px;font-family: "宋体";color: #999999;line-height: 24px;}
+.processBox .list p strong,.processBox1 .list p strong,.processBox2 .list p strong,.processBox3 .list p strong{font-size: 14px;color: #333333;}
+
+
+.navigation{height: 66px;width: 100%;background: #FFFFFF;}
+.navigation img{display: block;float: left;}
+.navigation .check,.navigation .checkOne{float: left;font-size: 20px;margin-left: 20px;text-align: center;line-height: 66px;color: #4f4f4f;font-family: "宋体";width: 120px;}
+.navigation .checkOne{margin-left: 40px;}
+.navigation .checkIn{border-bottom: 4px solid #D20C1C;}
+
+.price{clear: both;background: #e6e6e6;height: 50px;line-height: 50px;}
+.price p{font-size: 18px;color: #353535;margin-left: 2%;float: left;}
+.price a{color: #D20C1C;}
+.now{  position: relative; left: 740px;background: #D20C1C; height: 40px; overflow: hidden;top: 5px;width: 150px;border-radius: 5px; text-align: center;line-height: 40px;}
+.pagination {display: inline-block;padding-left: 0;margin: 20px 0;
+border-radius: 4px;margin-left: 350px !important;}
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+  z-index: 2;
+  color: #fff !important;
+  background-color: #D20C1C !important;
+  border-color: #D20C1C !important;
+  cursor: default;
+}
+.pagination>li>a, .pagination>li>span{color: #999999 !important;}
+
+/*.processBox .list{width:22%;float: left;margin: 0 1% 20px 6.33%;background: #FFFFFF;box-shadow: 1px 1px 5px #CCCCCC;position: relative;}*/ 
+.processBox .list.isVerify{*padding-bottom: 0; width: 23%;}
+.processBox .list span{width: 38px;height: 38px;display: block;background: url(../img/select.png) no-repeat center;position: absolute;
+  left: 0px;top: 0px;visibility: hidden;}
+/*.cityMainWine .list.isNotVerify span{visibility: hidden;}*/
+.processBox .list.isVerify span{visibility: visible;}
+/*.cityMainWine .list.failure span{visibility: hidden;}*/
+.processBox .list.isVerify .editBtn{display: none;}
+.processBox .list.failure .editBtn{display: none;}
+
+.processBox .list .PicBox{width: 100%;height: 220px;line-height: 220px;text-align: center;}
+.processBox .list .PicBox img{width: 100%;vertical-align: middle;height: 220px;}
+/*.processBox .list h1{font-size: 12px;font-family: "宋体";color: #666666;}*/
+
+.processBox .list .editBtn{margin-top: 20px;}
+.processBox .list .editBtn a.link{display: block;line-height: 34px;text-align: center;background: #CCCCCC;color: #333333;font-size: 16px;font-family: "宋体";width: 100%;}
+.processBox .list .editBtn a.giveBtn{display: none; line-height: 34px;text-align: center;background: #999999;color: #FFFFFF;font-size: 16px;font-family: "宋体";;width: 100%;}
+.processBox .list .editBtn a.link:hover{background: #D20C1C;color: #FFFFFF;}
+.processBox .list .editBtn a.selectBtn{background: #D20C1C;color: #FFFFFF;width: 100%;}
+.processBox .list.isNotVerify .editBtn a.giveBtn{display: none}
+.processBox .list .isShenHe a.inCheck{display: block;line-height: 34px;text-align: center;background: #d84c29;color: white;font-size: 16px;font-family: "宋体";width: 100%;}
+.processBox .list .isShenHe a.delCheck{display: block;line-height: 34px;text-align: center;background:#999999;color: white;font-size: 16px;font-family: "宋体";width: 100%;}
+
+
+
+.processBox .list .isShenHe{margin-top: 20px;}
+.processBox .list .isShenHe a{width:48%;display: block;line-height: 34px;text-align: center;background: #e6e6e6;color: #333333;font-size: 16px;font-family: "宋体";}
+.processBox .list .isShenHe a.verify{float: left;background: #D20C1C;color: #FFFFFF;}/*#999999*/
+.processBox .list .isShenHe a.giveBtn{float: right;}
+
+.processBox .list .isShenHe a.verifyfile{float: left;background: #999999;color: #FFFFFF;}/*#999999*/
+.processBox .list .isShenHe a.shenHeAgain{float: right;background: #D20C1C;color: #FFFFFF;}/*#999999*/
+
+/*保证金*/
+.EditBox .editBox {padding: 14px 0;width: 25%;}
+.EditBox .editBox a { font-size: 16px;font-family: "microsoft yahei";color: #FFFFFF;background: url(../img/contact_btn_bg.png) no-repeat center; width: 89px;height: 33px;line-height: 33px;display: inline-block;text-align: center; margin-left: 20px;}
+
+.EditBox .editBox span {font-size: 16px;font-family: "microsoft yahei";color: #333333;border-right: 1px solid #CCCCCC;padding-right: 20px;}
+.btn{padding: 0 !important;}
+
+
+.gary_div a.inCheck{display: block;line-height: 34px;text-align: center;background: #d84c29;color: white;font-size: 16px;font-family: "宋体";width: 100%;}
+
